@@ -1,0 +1,64 @@
+body{
+    background-color: aqua;
+}
+#header {
+    text-align: center;
+    background-color: orange;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    border: 1px dotted grey;
+}
+
+#header h1{
+    color: grey;
+}
+
+#header blockquote{
+    background-color: yellow;
+    border: 2px dotted;
+    padding: 1rem;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+.gambar{  
+    text-align: center;
+}
+
+.fp::first-letter{
+    color: blue;
+    font-size: 70px;
+}
+
+.koleksi{
+    text-align: center;
+}
+
+.koleksi img{
+    width: 20rem;
+    height: 20rem;
+}
+
+.promo{
+    text-align: center;
+    color: red;
+}
+
+.promo ol{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    padding: 40px;
+    gap: 20px;
+    border-radius: 10px;
+}
