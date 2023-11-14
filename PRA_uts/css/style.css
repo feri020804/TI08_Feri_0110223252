@@ -1,0 +1,66 @@
+.kotak{
+    background-color: rgb(182, 163, 163);
+    height: 700PX;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+}
+
+header{
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    background-color: black
+    
+}
+
+
+
+.nav ol{
+    font-size: 100%;
+    display: flex;
+    justify-content: left;
+    padding: 15px;
+    gap: 8%;
+}
+
+.nav a{
+    text-decoration: none;
+    color: whitesmoke;
+    list-style: none;
+
+}
+
+table{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+table tr{
+    margin: 5PX;
+}
+
+
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.simpan{
+    background-color: blue;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.batal{
+    background-color: red;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
