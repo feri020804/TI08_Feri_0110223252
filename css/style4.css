@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
+.container1{
+    display: flex;
+    flex: 1;
+    
+}
+
+
+.container1 nav{
+    background-color: pink;
+    display: flex;
+    width: 20vw;
+    height: 100vh;
+}
+
+.container2 header{
+    background-color: yellow;
+    display: flex;
+    width: 80vw;
+    height: 20vh;
+}
+.container2 footer{
+    background-color: yellow;
+    display: flex;
+    width: 80vw;
+    height: 20vh;
+}
+#main{
+    display: flex;
+
+}
+#main aside{
+    background-color: aqua;
+    display: flex;
+    flex: 0 0 40vh;
+    order: 2;
+    height: 60vh;
+}
+#main article{
+    flex: 1;
+    order: 1;
+}
