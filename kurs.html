@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konverter Rupiah ke Dollar</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Konverter Rupiah ke Dollar</h1>
+
+    <label for="uangRupiah">Masukkan jumlah uang dalam rupiah:</label>
+    <br />
+    <input type="number" id="uangRupiah" placeholder="Jumlah uang dalam rupiah">
+
+    <button onclick="hitungNilaiDollar()">Hitung</button>
+
+    <p id="hasilKonversi"></p>
+  </div>
+
+
+    <script>
+        function hitungNilaiDollar() {
+            const uangRupiah = parseFloat(document.getElementById("uangRupiah").value);
+            const kursDollar = 14650;
+            const nilaiDollar = uangRupiah / kursDollar;
+            document.getElementById("hasilKonversi").innerHTML = "Jumlah uang " + uangRupiah + " rupiah setara dengan " + nilaiDollar.toFixed(2) + " dollar.";
+        }
+    </script>
+
+</body>
+</html>

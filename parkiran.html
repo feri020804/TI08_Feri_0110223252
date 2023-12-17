@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biaya Parkir</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        .btn{
+          display: flex;
+          justify-content: center;
+          
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Biaya Parkir</h1>
+    <table>
+      <tr>
+        <td>
+          <label for="jamMasuk">Jam Masuk</label>
+        </td>
+        <td>:</td>
+        <td>
+          <input type="number" id="jamMasuk" placeholder="Jam Masuk">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="jamKeluar">Jam Keluar</label>
+        </td>
+        <td>:</td>
+        <td>
+          <input type="number" id="jamKeluar" placeholder="Jam Keluar">
+        </td>
+      </tr>
+  
+      
+    </table>
+
+    <div class="btn">
+      <button onclick="hitungBiayaParkir()">Hitung</button>
+    </div>
+
+    <table id="hasilTable">
+        <tr>
+            <th>Jam Masuk</th>
+            <th>Jam Keluar</th>
+            <th>Lama Parkir</th>
+            <th>Biaya</th>
+        </tr>
+    </table>
+
+    <script>
+        function hitungBiayaParkir() {
+            const jamMasuk = parseInt(document.getElementById("jamMasuk").value);
+            const jamKeluar = parseInt(document.getElementById("jamKeluar").value);
+
+            const lamaParkir = jamKeluar - jamMasuk;
+            const biayaAwal = 3000;
+            const biayaTambahan = 1000; 
+            const biaya = lamaParkir <= 2 ? biayaAwal : biayaAwal + biayaTambahan * (lamaParkir - 2);
+            const table = document.getElementById("hasilTable");
+            const row = table.insertRow(1);
+            const cell1 = row.insertCell(0);
+            const cell2 = row.insertCell(1);
+            const cell3 = row.insertCell(2);
+            const cell4 = row.insertCell(3);
+
+            cell1.textContent = jamMasuk;
+            cell2.textContent = jamKeluar;
+            cell3.textContent = lamaParkir + " jam";
+            cell4.textContent = biaya.toLocaleString("id-ID");
+        }
+    </script>
+
+</body>
+</html>

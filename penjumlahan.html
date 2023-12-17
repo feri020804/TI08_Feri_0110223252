@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjumlahan Dua Bilangan</title>
+</head>
+<body>
+
+    <h1>Penjumlahan Dua Bilangan</h1>
+
+    <input type="number" id="bilangan1" placeholder="Masukkan bilangan pertama" onChange="hitungJumlah()">
+    <p>+</p>
+    <input type="number" id="bilangan2" placeholder="Masukkan bilangan kedua" onChange="hitungJumlah()">
+    <p>=</p>
+
+    <p>Hasil Jumlah :<span id="hasilJumlah">0</span></p>
+
+    <script>
+        function hitungJumlah() {
+            const bilangan1 = parseFloat(document.getElementById("bilangan1").value) || 0;
+            const bilangan2 = parseFloat(document.getElementById("bilangan2").value) || 0;
+            const jumlah = bilangan1 + bilangan2;
+            document.getElementById("hasilJumlah").textContent = jumlah;
+        }
+    </script>
+
+</body>
+</html>

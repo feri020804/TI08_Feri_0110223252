@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div style="border: 2px solid black; width: 30%; padding: 18px ; margin: 20px 30px">
+    <p>menghitung dan luas keliling lingkaran :</p>
+    <input type="number" oninput="lingkaran(this.value)"/>
+    <p>Luas lingkaran : <span id="luas_lingkaran"></span></p>
+    <p>Keliling Lingkaran : <span id="keliling_lingkaran"></span></p>
+  </div>
+  <script>
+    function lingkaran(angka){
+    const luas = document.getElementById('luas_lingkaran')
+    const keliling = document.getElementById('keliling_lingkaran')
+      
+    const hasil_luas = Math.round(Math.PI * Math.pow(angka,2))
+    const hasil_keliling = Math.round(Math.PI * 2 * angka)
+    
+    luas.innerHTML = hasil_luas
+    keliling.innerHTML = hasil_keliling
+    }
+  </script>
+  </body>
+</html>
