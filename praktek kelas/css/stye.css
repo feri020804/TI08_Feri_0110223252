@@ -1,0 +1,19 @@
+body{
+    background-color: blue;
+}
+
+h3{
+    text-align: center;
+    color: white;
+}
+
+
+@media screen and (max-width: 700px) {
+    body{
+        background-color: orange;
+    }
+    h3{
+        text-align: center;
+        color: aqua;
+    }
+}
