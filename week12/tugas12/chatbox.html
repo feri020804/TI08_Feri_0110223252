@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #chat_box{
+        border: 1px solid black;
+        height: 50vh;
+        width: 65%;
+        position: relative;
+    }
+    #masukkan_pesan{
+        width: 85%;
+    }
+
+    #kirim_pesan{
+        width: 15%;
+    }
+
+    .input{
+        display: flex;
+        width: 65%;
+        border: 1px solid black;
+        position: relative;
+    }
+</style>
+<body>
+    <div id="chat_box"></div>
+    <div class="input">
+        <input type="text" id="masukkan_pesan" value="">
+        <input type="submit" id="kirim_pesan" onclick="kirimPesan()" value="kirim">
+    </div>
+    <script src="./program.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+    <style>
+        #image-container {
+            margin-top: 20px;
+            
+        }
+
+        #alert-box {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Image Picker</h2>
+    
+    <label for="image-dropdown">Select an image:</label>
+    <select id="image-dropdown" onchange="showImage()">
+        <option value="" disabled selected>Select an image</option>
+        <option value="image/img1.jpg">Image 1</option>
+        <option value="image/img2.jpg">Image 2</option>
+        <option value="image/img3.jpg">Image 3</option>
+        <option value="image/img4.jpg">Image 4</option>
+        <option value="image/img5.jpg">Image 5</option>
+        <!-- Add more image options as needed -->
+    </select>
+
+    <div id="image-container">
+        <img id="selected-image" src="image/img1.jpg" alt="Selected Image">
+        <img id="selected-image" src="image/img2.jpg" alt="Selected Image">
+        <img id="selected-image" src="image/img3.jpg" alt="Selected Image">
+        <img id="selected-image" src="image/img4.jpg" alt="Selected Image">
+        <img id="selected-image" src="image/img5.jpg" alt="Selected Image">
+    </div>
+
+    <div id="alert-box"></div>
+
+    <script src="./program.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        border-collapse: collapse;
+        width: 50%;
+        margin: 20px;
+    }
+    th,td{
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+
+</style>
+<body>
+    <fieldset>
+        <legend>Kurs Rupiah - Mata Uang Asing</legend>
+        <table>
+            <tr>
+                <td>Masukkan Nilai</td>
+                <td>Valas</td>
+                <td>Nilai Rupiah</td>
+            </tr>
+            <tr>
+                <td><input style="width: 90%; height: 20PX;" type="number" id="masukan_nilai" oninput="kurs(this.value)"></td>
+                <td>
+                    <select name="" id="selec" style="width: 90%; height: 20PX;">
+                        <option value="dollar us">Dollar Us</option>
+                        <option value="dollar singapure">Dollar Singapure</option>
+                        <option value="ringgit malaysia">Ringgit Malaysia</option>
+                        <option value="yen jepang">Yen Jepang</option>
+                        <option value="euro">Euro</option>
+                        <option value="riyal arab saudi">Riyal Arab Saudi</option>
+                    </select>
+                </td>
+                <td><input style="width: 90%; height: 20PX;" type="number" id="rupiah" onclick="kurs()"></td>
+            </tr>
+        </table>
+    </fieldset>
+    <script src="./program.js"></script>
+</body>
+</html>
